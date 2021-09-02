@@ -2,7 +2,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 int main()
 {
-	int n,a,i,j,b,c,x;
+    int n,a,i,j,b,c,x;
     printf("Enter your number :");
     scanf("%d",&n);
     a = (2*n)-1;
@@ -16,19 +16,19 @@ int main()
     for(i=1;i<=n-1;i++)
 	{
         for(j=1;j<a;j++)
-		{
+	{
             if(j<=i)
-			{
+		{
                 printf(" ");
                 b=b+1;
-            }
+            	}
             else
-			{
+		{
                 printf("*");
-            }
+            	}
         }
         for(x=1;x<=b;x++)
-		{
+	{
             printf(" ");
         }
         printf("\n");
@@ -39,15 +39,15 @@ int main()
 	//rectangle below
 	int y,z,e,d,w;
 	d = (2*n)-1;
-    for(y=2;y<=n-1;y++)
+        for(y=2;y<=n-1;y++)
 	{  
         d=d-1;
         e=d;
 	}
 	for(y=n-1;y>1;y--)
-    {
+    	{
         for(z=1;z<=e;z++)
-		{
+	{
             if(z<y)
             {
                 printf(" ");
@@ -55,13 +55,13 @@ int main()
             else
             {
             	printf("*");
-			}
+	    }
         }
         for(w=1;w<y;w++)
-		{
+	{
             printf(" ");
         }
-    e=e+1;
+    	e=e+1;
 	printf("\n");
 	}
 	//base
