@@ -12,7 +12,7 @@ int main()
 		printf("*");	
 	}
 	printf("\n");
-	//rectangle above
+    //rectangle above
     for(i=1;i<=n-1;i++)
 	{
         for(j=1;j<a;j++)
@@ -36,16 +36,16 @@ int main()
         a = a-1;
         c = a;
 	}
-	//rectangle below
-	int y,z,e,d,w;
-	d = (2*n)-1;
-        for(y=2;y<=n-1;y++)
-	{  
+    //rectangle below
+    int y,z,e,d,w;
+    d = (2*n)-1;
+    for(y=2;y<=n-1;y++)
+    {  
         d=d-1;
         e=d;
-	}
-	for(y=n-1;y>1;y--)
-    	{
+    }
+    for(y=n-1;y>1;y--)
+    {
         for(z=1;z<=e;z++)
 	{
             if(z<y)
@@ -63,11 +63,11 @@ int main()
         }
     	e=e+1;
 	printf("\n");
-	}
-	//base
-	for(y=1;y<=(2*n)-1;y++)
-	{
-		printf("*");
-	}
-	return 0;
+    }
+    //base
+    for(y=1;y<=(2*n)-1;y++)
+    {
+	printf("*");
+    }
+    return 0;
 }
